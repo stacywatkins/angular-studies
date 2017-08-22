@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="styles/stylesheet.css"></script>
+    <title>CSS Classes</title>
+</head>
+<body>
+    <h1>CSS Classes</h1>
+    <form ng-app="" name="myForm" ng-class="input.ng-invalid">
+        Enter your name:
+        <input name="myName" ng-model="myText" required>
+    </form>
+
+    <p>The ng-model directive adds/removes the following classes, according to the status of the form field:</p>
+    <ul>
+        <li>
+            ng-empty
+        </li>
+        <li>
+            ng-touched
+        </li>
+        <li>
+            ng-untouched
+        </li>
+        <li>
+            ng-valid
+        </li>
+        <li>
+            ng-invalid
+        </li>
+        <li>
+            ng-dirty
+        </li>
+        <li>
+            ng-pending
+        </li>
+        <li>
+            ng-pristine
+        </li>
+    </ul>
+</body>
+</html>
